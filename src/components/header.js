@@ -1,34 +1,20 @@
 import { Link } from "gatsby"
 import React from "react"
-import { css } from "@emotion/react"
 
-const NavLink = props => (
-  <Link
-    css={{
-      marginLeft: "5px",
-      marginRight: "5px",
-      padding: "10px",
-      color: "#4b5563",
-      textDecoration: "none",
-      fontSize: "1.25rem",
-      "&:hover": {
-        color: "#1f2937",
-        border: "1px solid #1f2937",
-      },
-    }}
-    {...props}
-  />
-)
+export const NavLink = ({ children, to }) => {
+  return (
+    <Link
+      className="mx-0 p-5 text-gray-600 text-lg hover:text-gray-800 hover:border-2 hover:border-solid hover:border-gray-800"
+      to={to}
+    >
+      {children}
+    </Link>
+  )
+}
 
 export default function Header() {
   return (
-    <header
-      css={{
-        paddingTop: "20px",
-        paddingBottom: "20px",
-        borderBottom: "1px solid #4b5563",
-      }}
-    >
+    <header className="pt-5">
       <nav>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/about">About</NavLink>

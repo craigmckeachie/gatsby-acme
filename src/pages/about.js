@@ -1,10 +1,11 @@
 import React from "react"
 import Layout from "../components/layout"
+import { PageTitle } from "../components/page-title"
 
 export default function About() {
   return (
     <Layout>
-      <h1>About</h1>
+      <PageTitle>About</PageTitle>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, possimus!
         Nam voluptatibus a dolore expedita atque corporis delectus! Reiciendis,
