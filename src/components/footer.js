@@ -1,20 +1,21 @@
-import React from "react"
-import * as styles from "./footer.module.css"
+import React from "react";
+import * as styles from "./footer.module.css";
 
 export default function Footer() {
   return (
-    <footer>
-      <nav className="styles.nav">
-        <a href="#" className={`${styles.link} ${styles.first}`}>
+    <div>
+      <nav className={styles.nav}>
+        <a className={`${styles.link} ${styles.first}`} href="#">
           Privacy
         </a>
-        <a href="#" className={styles.link}>
+        <a className={styles.link} href="#">
           Terms
         </a>
-        <a href="#" className={styles.link}>
-          Career
+        <a className={styles.link} href="#">
+          Careers
         </a>
+        <span> &#169; Acme Inc.</span>
       </nav>
-    </footer>
-  )
+    </div>
+  );
 }

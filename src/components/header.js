@@ -1,33 +1,38 @@
 import { Link } from "gatsby"
 import React from "react"
-import styled from "@emotion/styled"
+import { css } from "@emotion/react"
 
-const NavLink = styled(Link)`
-  margin-left: 5px;
-  margin-right: 5px;
-  padding: 10px;
-  color: #4b5563;
-  text-decoration: none;
-  font-size: 1.25rem;
-  &:hover {
-    color: #1f2937;
-    border: 1px solid #1f2937;
-    padding: 10px;
-  }
-`
-
-const StyledHeader = styled.header`
-  border-bottom: 1px solid #4b5563;
-  padding-top: 20px;
-  padding-bottom: 20px;
-`
+const NavLink = props => (
+  <Link
+    css={{
+      marginLeft: "5px",
+      marginRight: "5px",
+      padding: "10px",
+      color: "#4b5563",
+      textDecoration: "none",
+      fontSize: "1.25rem",
+      "&:hover": {
+        color: "#1f2937",
+        border: "1px solid #1f2937",
+      },
+    }}
+    {...props}
+  />
+)
 
 export default function Header() {
   return (
-    <StyledHeader>
+    <header
+      css={{
+        paddingTop: "20px",
+        paddingBottom: "20px",
+        borderBottom: "1px solid #4b5563",
+      }}
+    >
       <nav>
-        <NavLink to="/">Home</NavLink> | <NavLink to="/about">About</NavLink>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/about">About</NavLink>
       </nav>
-    </StyledHeader>
+    </header>
   )
 }
