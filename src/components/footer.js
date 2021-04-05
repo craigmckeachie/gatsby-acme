@@ -15,9 +15,9 @@ export default function Footer() {
   return (
     <div>
       <nav className="my-8">
-        <FooterLink>Privacy</FooterLink>
-        <FooterLink>Terms</FooterLink>
-        <FooterLink>Careers</FooterLink>
+        <FooterLink to="/privacy">Privacy</FooterLink>
+        <FooterLink to="/terms">Terms</FooterLink>
+        <FooterLink to="/careers">Careers</FooterLink>
         <span className="text-gray-400"> &#169; Acme Inc.</span>
       </nav>
     </div>

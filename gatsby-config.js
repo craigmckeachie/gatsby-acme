@@ -6,5 +6,20 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [`gatsby-plugin-emotion`, `gatsby-plugin-postcss`],
+  siteMetadata: {
+    title: `Acme Inc.`,
+    description: `A corporate site`,
+  },
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src`,
+      },
+    },
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-emotion`,
+    `gatsby-plugin-postcss`,
+  ],
 }
