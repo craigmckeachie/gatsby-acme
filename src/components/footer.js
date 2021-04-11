@@ -13,7 +13,7 @@ export const FooterLink = ({ children, to }) => {
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="col-start-1 col-end-3">
       <nav className="my-8">
         <FooterLink to="/privacy">Privacy</FooterLink>
         <FooterLink to="/terms">Terms</FooterLink>

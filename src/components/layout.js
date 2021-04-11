@@ -5,11 +5,11 @@ import "../styles/global.css"
 
 export default function Layout({ children }) {
   return (
-    <div className="p-2 mx-auto container w-auto border-box">
+    <div className="mx-auto container grid grid-cols-layout grid-rows-layout">
       <Header />
       <main>{children}</main>
-      <aside>
-        <figure className="p-6 shadow-sm rounded-md  bg-gray-300  my-6">
+      <aside className="m-2 p-2 bg-gray-100 w-full h-56 flex-none rounded-xl">
+        <figure className="transform -rotate-1 p-6 shadow-sm rounded-md  bg-red-200  my-2 mx-0">
           <blockquote className="text-xl text-gray-600 ">
             "We here at Acme Inc. understand that it is better to leverage
             efficiently than to benchmark extensibly."

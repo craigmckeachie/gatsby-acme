@@ -23,7 +23,7 @@ export default function Header() {
     }
   `)
   return (
-    <header className="pt-5">
+    <header className="pt-5 col-start-1 col-end-3 pt-5 pb-10 border-b-2 border-solid border-gray-600 ">
       <Link className="text-4xl mx-4" to="/">
         {data.site.siteMetadata.title}
       </Link>
