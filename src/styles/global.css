@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-gray-100;
-}
-
 /* .container {
   display: grid;
   grid-template-columns: 1fr 20em;

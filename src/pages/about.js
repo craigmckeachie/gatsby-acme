@@ -1,12 +1,19 @@
 import React from "react"
 import Layout from "../components/layout"
 import { PageTitle } from "../components/page-title"
+import aboutPhoto from "../images/about-photo.png"
 
 export default function About() {
   return (
     <Layout>
       <PageTitle>About</PageTitle>
-      <p>
+      <img
+        className="rounded-md shadow-md"
+        style={{ width: "600px", height: "300px" }}
+        src={aboutPhoto}
+        alt="corporate building"
+      />
+      <p className="mt-6">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, possimus!
         Nam voluptatibus a dolore expedita atque corporis delectus! Reiciendis,
         magni culpa quidem esse facilis porro recusandae officia tempore aliquid
