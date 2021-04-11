@@ -13,13 +13,13 @@ export const FooterLink = ({ children, to }) => {
 
 export default function Footer() {
   return (
-    <div>
+    <footer>
       <nav className="my-8">
         <FooterLink to="/privacy">Privacy</FooterLink>
         <FooterLink to="/terms">Terms</FooterLink>
         <FooterLink to="/careers">Careers</FooterLink>
         <span className="text-gray-400"> &#169; Acme Inc.</span>
       </nav>
-    </div>
+    </footer>
   )
 }
