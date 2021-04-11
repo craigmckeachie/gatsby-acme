@@ -4,6 +4,6 @@
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
   </a>
 </p>
-<h1 align="center">
+<p>
   A fictional website for the Acme company created using Gatsby.
-</h1>
+</p>
