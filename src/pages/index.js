@@ -2,17 +2,21 @@ import { graphql, Link } from "gatsby"
 import React from "react"
 import Layout from "../components/layout"
 import { PageTitle } from "../components/page-title"
-import homePagePhoto from "../images/home-page-photo.jpeg"
+import { StaticImage } from "gatsby-plugin-image"
 
 export default function Home({ data }) {
   return (
     <Layout>
       <PageTitle>Home</PageTitle>
-      <img
-        className="rounded-md shadow-md"
-        style={{ width: "600px", height: "300px" }}
-        src={homePagePhoto}
-        alt="corporate,office,building"
+      <StaticImage
+        imgClassName="rounded-md shadow-md"
+        placeholder="blurred"
+        backgroundColor="red"
+        loading="eager"
+        width={600}
+        height={300}
+        src={"../images/home-page-photo.jpeg"}
+        alt="corporate office building"
       />
 
       <p className="pt-6">
